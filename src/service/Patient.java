@@ -1,4 +1,9 @@
 package service;
 
-public interface Patient {
+import java.util.List;
+import java.util.Map;
+
+public interface Patient{
+
 }
+
