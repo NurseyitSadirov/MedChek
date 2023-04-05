@@ -16,6 +16,13 @@ public class Database {
     public Database() {
     }
 
+    public Database(List<Hospital> hospitals, List<Doctor> doctors, List<Patient> patients, List<Department> departments) {
+        this.hospitals = hospitals;
+        this.doctors = doctors;
+        this.patients = patients;
+        this.departments = departments;
+    }
+
     public List<Hospital> getHospitals() {
         return hospitals;
     }
@@ -46,5 +53,15 @@ public class Database {
 
     public void setDepartments(List<Department> departments) {
         this.departments = departments;
+    }
+
+    @Override
+    public String toString() {
+        return "Database{" +
+                "hospitals=" + hospitals +
+                ", doctors=" + doctors +
+                ", patients=" + patients +
+                ", departments=" + departments +
+                '}';
     }
 }
