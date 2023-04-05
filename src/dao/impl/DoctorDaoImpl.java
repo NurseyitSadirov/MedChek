@@ -3,17 +3,20 @@ package dao.impl;
 import dao.DoctorDao;
 import database.Database;
 import model.Doctor;
+import model.Hospital;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DoctorDaoImpl implements DoctorDao {
     private final List<Database> databases = new ArrayList<>();
+    private final List<Doctor> doctors = new ArrayList<>();
 
 
     @Override
     public String addDoctorToHospital(Long id, Doctor doctor) {
-        return null;
+        doctors.add(Math.toIntExact(id),doctor);
+        return "Added doctor" + doctors + " ";
     }
 
     @Override
@@ -28,7 +31,6 @@ public class DoctorDaoImpl implements DoctorDao {
 
     @Override
     public void deleteDoctorById(Long id) {
-
     }
 
     @Override
