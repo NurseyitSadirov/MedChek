@@ -14,14 +14,14 @@ public class Main {
         System.out.println("=============HOSPITAL============");
         List<Doctor> doctors = new ArrayList<>();
         doctors.add(new Doctor(22L, "Nurseyit", "Sadirov", Gender.MALE, 2006));
-        doctors.add(new Doctor(22L, "Nurseyit", "Sadirov", Gender.MALE, 2006));
-        doctors.add(new Doctor(22L, "Nurseyit", "Sadirov", Gender.MALE, 2006));
-        doctors.add(new Doctor(22L, "Nurseyit", "Sadirov", Gender.MALE, 2006));
+        doctors.add(new Doctor(23L, "Adilet", "Islamber uulu", Gender.MALE, 2001));
+        doctors.add(new Doctor(24L, "Aizat", "Dyisheeva", Gender.FEMALE, 2003));
+        doctors.add(new Doctor(25L, "Baitik", "Taalaibekov", Gender.MALE, 2002));
         List<Department> departments = new ArrayList<>();
         departments.add(new Department(12L, "Nurseyit", doctors));
-        departments.add(new Department(12L, "Nurseyit", doctors));
-        departments.add(new Department(12L, "Nurseyit", doctors));
-        departments.add(new Department(12L, "Nurseyit", doctors));
+        departments.add(new Department(13L, "Khafiz", doctors));
+        departments.add(new Department(14L, "Mirbek", doctors));
+        departments.add(new Department(15L, "Matmusa", doctors));
         List<Patient> patients = new ArrayList<>();
         patients.add(new Patient(33L, "Ernazar", "Tilek uulu", 20, Gender.MALE));
         List<Hospital> hospitals = List.of(
