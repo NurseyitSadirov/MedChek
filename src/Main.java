@@ -62,20 +62,20 @@ public class Main {
                 new Hospital(4L, "Urology", "Vostok 5", departments, doctors, patients)
         );
 
-        Hospital hospital = new Hospital(1L, "Urology", "Vostok 5", departments, doctors, patients);
+        Hospital hospital1 = new Hospital(1L, "Urology", "Vostok 5", departments, doctors, patients);
 
-        HospitalDaoImpl hospitalDao = new HospitalDaoImpl();
-        System.out.println(hospitalDao.addHospital(hospital));
+        HospitalDaoImpl hospitalDao1 = new HospitalDaoImpl();
+        System.out.println(hospitalDao1.addHospital(hospital1));
         System.out.println("~~~~~~~~");
-        System.out.println(hospitalDao.findHospitalById(34L));
+        System.out.println(hospitalDao1.findHospitalById(34L));
         System.out.println("~~~~~~~~");
-        System.out.println(hospitalDao.getAllHospital());
+        System.out.println(hospitalDao1.getAllHospital());
         System.out.println("~~~~~~~~");
-        System.out.println(hospitalDao.getAllPatientFromHospital(1L));
+        System.out.println(hospitalDao1.getAllPatientFromHospital(1L));
         System.out.println("~~~~~~~~");
-        System.out.println(hospitalDao.deleteHospitalById(2L));
+        System.out.println(hospitalDao1.deleteHospitalById(2L));
         System.out.println("~~~~~~~~");
-        System.out.println(hospitalDao.getAllHospitalByAddress("Vostok 5"));
+        System.out.println(hospitalDao1.getAllHospitalByAddress("Vostok 5"));
 
     }
 }
