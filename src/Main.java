@@ -80,12 +80,12 @@ public class Main {
         departments.add(new Department(13L, "Khafiz", doctors));
         departments.add(new Department(14L, "Mirbek", doctors));
         departments.add(new Department(15L, "Matmusa", doctors));
-        List<Patient> patients = new ArrayList<>();
+        List<Patient> patients1 = new ArrayList<>();
         patients.add(new Patient(33L, "Ernazar", "Tilek uulu", 20, Gender.MALE));
         List<Hospital> hospitals = List.of(
-                new Hospital(2L, "Urology", "Vostok 5", departments, doctors, patients),
-                new Hospital(3L, "Urology", "Vostok 5", departments, doctors, patients),
-                new Hospital(4L, "Urology", "Vostok 5", departments, doctors, patients)
+                new Hospital(2L, "Urology", "Vostok 5", departments, doctors, patients1),
+                new Hospital(3L, "Urology", "Vostok 5", departments, doctors, patients1),
+                new Hospital(4L, "Urology", "Vostok 5", departments, doctors, patients1)
         );
 
         Hospital hospital1 = new Hospital(1L, "Urology", "Vostok 5", departments, doctors, patients);
