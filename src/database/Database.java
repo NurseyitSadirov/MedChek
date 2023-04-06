@@ -5,13 +5,14 @@ import model.Doctor;
 import model.Hospital;
 import model.Patient;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Database {
-    private List<Hospital> hospitals;
-    private List<Doctor> doctors;
-    private List<Patient> patients;
-    private List<Department> departments;
+    private List<Hospital> hospitals = new ArrayList<>();
+    private List<Doctor> doctors = new ArrayList<>();
+    private List<Patient> patients = new ArrayList<>();
+    private List<Department> departments = new ArrayList<>();
 
     public Database() {
     }

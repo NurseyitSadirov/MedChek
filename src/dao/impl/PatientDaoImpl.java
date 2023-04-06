@@ -1,5 +1,6 @@
 package dao.impl;
 
+
 import dao.PatientDao;
 import database.Database;
 import model.Hospital;
@@ -114,5 +115,8 @@ public class PatientDaoImpl implements PatientDao {
         }
         return null;
     }
+
+public class PatientDaoImpl {
+
 
 }
