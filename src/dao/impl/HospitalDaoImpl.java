@@ -14,6 +14,13 @@ import java.util.stream.Collectors;
 public class HospitalDaoImpl implements HospitalDao {
     Database databases = new Database();
 
+    public HospitalDaoImpl(Database databases) {
+        this.databases = databases;
+    }
+
+    public HospitalDaoImpl() {
+    }
+
     @Override
     public String addHospital(Hospital hospital) {
         boolean stream = databases.getHospitals().stream().anyMatch(x -> x.getId().equals(hospital.getId()));
