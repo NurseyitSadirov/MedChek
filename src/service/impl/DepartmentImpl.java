@@ -5,6 +5,9 @@ import service.Department;
 import java.util.List;
 
 public class DepartmentImpl implements Department {
+
+
+
     DepartmentImpl departments = new DepartmentImpl();
     @Override
     public String addDepartmentToHospital(Long id, model.Department department) {
@@ -30,4 +33,5 @@ public class DepartmentImpl implements Department {
     public String updateDepartmentById(Long id, model.Department department) {
         return departments.updateDepartmentById(id,department);
     }
+
 }
