@@ -3,6 +3,16 @@ package database;
 import model.Department;
 import model.Doctor;
 import model.Hospital;
+
+import java.util.ArrayList;
+import java.util.List;
+@Data
+public class Database {
+    private List<Hospital> hospitals;
+
+    public Database(){
+        this.hospitals = new ArrayList<>();
+
 import model.Patient;
 
 import java.util.ArrayList;
@@ -22,11 +32,13 @@ public class Database {
         this.doctors = doctors;
         this.patients = patients;
         this.departments = departments;
+
     }
 
     public List<Hospital> getHospitals() {
         return hospitals;
     }
+
 
     public void setHospitals(List<Hospital> hospitals) {
         this.hospitals = hospitals;
